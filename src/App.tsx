@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {View, Text, SafeAreaView, NativeModules, Alert} from 'react-native';
+import {View, SafeAreaView, NativeModules, Alert} from 'react-native';
 import styles from './styles';
 import Quiz from './Screens/Quiz';
 import HeaderClass from './Components/Headers';

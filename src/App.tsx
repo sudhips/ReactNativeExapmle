@@ -11,8 +11,6 @@ const App = () => {
   }
 
   useEffect(() => {
-    // console.log("NativeModules:", NativeModules.HelloWorld?.helloWorld)
-    // console.log("NativeModules add:", NativeModules.HelloWorld?.addTwoNumbers)
     NativeModules.HelloWorld?.addTwoNumbers(5, 7)
       .then(({sum}: NativeProp) => {
         Alert.alert(sum.toString());

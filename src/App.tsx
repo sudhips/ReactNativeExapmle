@@ -24,7 +24,7 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <HeaderClass title={'Quiz App'} />
+        <HeaderClass title={'Quiz Application'} />
         <Quiz />
         {/* <TypeScriptComponent /> */}
       </View>

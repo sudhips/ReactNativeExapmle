@@ -41,9 +41,18 @@ const App = () => {
         <Quiz />
         {/* <TypeScriptComponent /> */}
         <Button
+          title="Feature-1"
+          onPress={() => Alert.alert('This is for feature-1 test!')}
+          color={'green'}
+        />
+        <Button
           title="Testing Button"
           onPress={
-            () => Analytics.trackEvent('testing_button', {Internet: 'WiFi', GPS: 'Off'})
+            () =>
+              Analytics.trackEvent('testing_button', {
+                Internet: 'WiFi',
+                GPS: 'Off',
+              })
             // Crashes.generateTestCrash();
             // throw new Error('Some Text');
           }

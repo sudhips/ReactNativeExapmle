@@ -12,6 +12,9 @@
   "dependencies": {
     "@react-navigation/native": "^6.1.17",
     "@types/react-native": "^0.73.0",
+    "appcenter": "5.0.1",
+    "appcenter-analytics": "5.0.1",
+    "appcenter-crashes": "5.0.1",
     "axios": "^1.6.8",
     "react": "18.2.0",
     "react-native": "0.74.1",

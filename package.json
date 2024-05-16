@@ -7,7 +7,10 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "clean": "cd android && ./gradlew clean && cd ..",
+    "build": "cd android && ./gradlew clean && ./gradlew bundleRelease && cd .. && react-native run-android --variant=release",
+    "build:prod": "cd android && ./gradlew clean && ./gradlew app:bundleRelease"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.17",
@@ -17,7 +20,7 @@
     "appcenter-crashes": "5.0.1",
     "axios": "^1.6.8",
     "react": "18.2.0",
-    "react-native": "0.74.1",
+    "react-native": "0.73.6",
     "react-native-elements": "^3.4.3",
     "react-native-gesture-handler": "^2.16.1",
     "react-native-safe-area-context": "^4.10.1",
